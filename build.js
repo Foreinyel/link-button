@@ -24,7 +24,7 @@ const buildDemo = function () {
   return new Promise(function (resolve, reject) {
     const mode = "production";
     const compiler = webpack({
-      entry: "./src/index.ts",
+      entry: "./src/Example.tsx",
       resolve: {
         extensions: [".ts", ".tsx", ".js", ".json", ".less"],
         mainFields: ["main"],

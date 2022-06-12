@@ -1,7 +1,13 @@
 import React from "react";
+import css from "./Component.less";
 
-export const Component = (props: any) => {
-  return <div>{props.children}</div>;
+export interface LinkButtonProps {
+  onClick?: () => void;
+  children?: React.ReactNode | React.ReactNode[];
+}
+
+export const Component = (props: LinkButtonProps) => {
+  return <button className={css.linkButton}>{props.children}</button>;
 };
 
 export default Component;

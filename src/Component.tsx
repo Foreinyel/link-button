@@ -7,7 +7,11 @@ export interface LinkButtonProps {
 }
 
 export const Component = (props: LinkButtonProps) => {
-  return <button className={css.linkButton}>{props.children}</button>;
+  return (
+    <button onClick={props.onClick} className={css.linkButton}>
+      {props.children}
+    </button>
+  );
 };
 
 export default Component;

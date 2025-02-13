@@ -9,7 +9,7 @@ export interface LinkButtonProps {
 export const Component = (props: LinkButtonProps) => {
   return (
     <button onClick={props.onClick} className={css.linkButton}>
-      {props.children}
+      {props.children}22
     </button>
   );
 };
